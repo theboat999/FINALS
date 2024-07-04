@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    /* Removed height and position properties */
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.navigation {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 15px; /* Reduced margin for better spacing */
+    display: flex;
+    align-items: center;
+}
+
+.navigation a svg {
+    margin-left: 8px;
+    fill: #333;
+    vertical-align: middle;
+}
+
+.navigation h1 svg {
+    vertical-align: middle;
+}
+
+.navigation a:hover {
+    color: #007bff;
+}
+
+.video-container {
+    display: flex;
+    overflow-y: auto;
+    gap: 20px;
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+    height: 80vh;
+    scroll-behavior: smooth;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-card {
+    color: white;
+    border: 1px solid #ccc;
+    padding: 20px; /* Adjust padding as needed */
+    width: 500px; /* Example fixed width */
+    height: auto; /* Adjust height based on content */
+    scroll-snap-align: start;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content */
+}
+
+.video-player {
+    width: 100%; /* Take up full width of parent */
+    height: 450px; /* Example fixed height */
+    object-fit: cover; /* Ensure video fills the dimensions */
+    border-radius: 20px; /* Example border radius */
+}
+

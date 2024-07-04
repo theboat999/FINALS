@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    height: 80%;
+}
+
+.info-container {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 7%;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.navigation {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 15px; /* Reduced margin for better spacing */
+    display: flex;
+    align-items: center;
+}
+
+.navigation a svg {
+    margin-left: 8px;
+    fill: #333;
+    vertical-align: middle;
+}
+
+.navigation h1 svg {
+    vertical-align: middle;
+}
+
+.navigation a:hover {
+    color: #007bff;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    font-family: 'Montserrat', sans-serif;
+    border-color: #28282B;
+    outline: none;
+}
+
+button[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    background-color: 	#28282B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+}
+
+.info-container a {
+    font-family: 'Montserrat', sans-serif;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.info-container a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    height: 80%;
+}
+
+.upload-container {
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-top: 7%;
+    text-align: center;
+}
+
+.upload-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.upload-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #333;
+}
+
+.upload-container input[type="text"],
+.upload-container textarea,
+.upload-container input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.upload-container textarea {
+    resize: vertical;
+}
+
+.upload-container button {
+    background-color: 	#28282B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+.upload-container button:hover {
+    background-color: black;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.navigation {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation a svg {
+    margin-left: 8px;
+    fill: #333;
+    vertical-align: middle;
+}
+
+.navigation h1 svg {
+    vertical-align: middle;
+}
+
+.navigation a:hover {
+    color: #007bff;
+}
+
+
+/* Other CSS code */
+
+#drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+#drop-area p {
+    margin: 0;
+    font-size: 1em;
+    color: #999;
+}
+
+#drop-area input[type="file"] {
+    display: none;
+}
+
+#drop-area.dragover {
+    border-color: black;
+}
+
+#drop-area.dragover p {
+    color: black;
+}
